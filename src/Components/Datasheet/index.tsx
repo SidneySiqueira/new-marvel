@@ -36,9 +36,6 @@ export default function Datasheet({
   const comics = useSelector((state: RootState) => state.comicsReducer.comics);
   const events = useSelector((state: RootState) => state.eventsReducer.events);
 
-  console.log("comics", comics);
-  console.log("events", events);
-
   const dispatch: ThunkDispatch<RootState, undefined, Action<any>> = useDispatch();
 
   const handleSearchComics = async () => {
@@ -77,9 +74,9 @@ export default function Datasheet({
             <S.Description>
               {description ? description : "Don't have information"}
             </S.Description>
-            {urls.map((item) => {
+            {urls.map((item, index) => {
               return (
-                <S.Links>
+                <S.Links key={index}>
                   <S.References>{item.type}:</S.References>
                   <S.Urls href={item.url} target="_blank">Click here</S.Urls>
                 </S.Links>

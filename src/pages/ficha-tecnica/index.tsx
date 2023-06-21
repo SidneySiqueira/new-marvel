@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Head from 'next/head';
-import * as S from './styled';
+import * as S from '../../styles/pagesStyle/ficha-tecnica/styled';
 import Header from '@/Components/Header';
 import Footer from '@/Components/Footer';
 import Datasheet from '@/Components/Datasheet';

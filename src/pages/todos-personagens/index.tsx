@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import Head from 'next/head'
-import * as S from './styled'
+import * as S from '../../styles/pagesStyle/todos-personagens/styled'
 import Header from '@/Components/Header'
 import Footer from '@/Components/Footer'
 import List from '@/Components/List'

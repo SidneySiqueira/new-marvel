@@ -12,14 +12,14 @@ export const Image = styled.img`
     width: 300px;
 `
 
-export const h1 = styled.h1`
+export const Title = styled.h1`
     border-radius: 0.313rem;
 
     background: #e63a2e;
     color: white;
 `
 
-export const p = styled.p`
+export const Text = styled.p`
     border-radius: 0.313rem;
 
     background: #e63a2e;

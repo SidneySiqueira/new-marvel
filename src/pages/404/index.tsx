@@ -1,7 +1,8 @@
+import React from 'react'
 import Head from 'next/head'
-import * as S from './Styled'
+import * as S from '../../styles/pagesStyle/404/styled'
 
-export default function Maintenance() {
+const Maintenance = () => {
     return (
         <>
             <Head>
@@ -10,11 +11,13 @@ export default function Maintenance() {
             </Head>
             <S.Error>
                 <S.Image src='https://www.imagensempng.com.br/wp-content/uploads/2021/05/16-1.png' />
-                <S.h1>Sorry, we're doen for maintenance</S.h1>
-                <S.p>We'llbe back shortly</S.p>
+                <S.Title>Sorry, we&apos;re doen for maintenance</S.Title>
+                <S.Text>We&apos;llbe back shortly</S.Text>
                 <S.Link href='/home'> click to be directed</S.Link>
             </S.Error>
         </>
 
     )
 }
+
+export default Maintenance;
